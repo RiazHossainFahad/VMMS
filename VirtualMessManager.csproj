@@ -1,0 +1,305 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{5DC325D9-5D27-4C84-B24B-23DBEE5A34E0}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>VirtualMessManager</RootNamespace>
+    <AssemblyName>VirtualMessManager</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="Microsoft.VisualBasic.PowerPacks, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="UIAutomationProvider" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="WindowsFormsIntegration" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Add Bazar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Add Bazar.Designer.cs">
+      <DependentUpon>Add Bazar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminChange.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminChange.Designer.cs">
+      <DependentUpon>AdminChange.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminSession.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminSession.Designer.cs">
+      <DependentUpon>AdminSession.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Book Meal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Book Meal.Designer.cs">
+      <DependentUpon>Book Meal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Calculation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Calculation.Designer.cs">
+      <DependentUpon>Calculation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="EditBazar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditBazar.Designer.cs">
+      <DependentUpon>EditBazar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EditMealChart.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditMealChart.Designer.cs">
+      <DependentUpon>EditMealChart.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Manager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manager.Designer.cs">
+      <DependentUpon>Manager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Member.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Member.Designer.cs">
+      <DependentUpon>Member.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MemberInformation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MemberInformation.Designer.cs">
+      <DependentUpon>MemberInformation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RegistrationForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RegistrationForm.Designer.cs">
+      <DependentUpon>RegistrationForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SeeBazarHistory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SeeBazarHistory.Designer.cs">
+      <DependentUpon>SeeBazarHistory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SeeBookedMeal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SeeBookedMeal.Designer.cs">
+      <DependentUpon>SeeBookedMeal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VMMDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>VMMDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="VMMDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>VMMDataSet1.xsd</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Add Bazar.resx">
+      <DependentUpon>Add Bazar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminChange.resx">
+      <DependentUpon>AdminChange.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminSession.resx">
+      <DependentUpon>AdminSession.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Book Meal.resx">
+      <DependentUpon>Book Meal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Calculation.resx">
+      <DependentUpon>Calculation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditBazar.resx">
+      <DependentUpon>EditBazar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditMealChart.resx">
+      <DependentUpon>EditMealChart.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Manager.resx">
+      <DependentUpon>Manager.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Member.resx">
+      <DependentUpon>Member.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MemberInformation.resx">
+      <DependentUpon>MemberInformation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="RegistrationForm.resx">
+      <DependentUpon>RegistrationForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SeeBazarHistory.resx">
+      <DependentUpon>SeeBazarHistory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SeeBookedMeal.resx">
+      <DependentUpon>SeeBookedMeal.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="DataSet1.xsc">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSet1.xss">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet2.xsc">
+      <DependentUpon>DataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSet2.xss">
+      <DependentUpon>DataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="VMMDataSet.xsc">
+      <DependentUpon>VMMDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="VMMDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>VMMDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="VMMDataSet.xss">
+      <DependentUpon>VMMDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="VMMDataSet1.xsc">
+      <DependentUpon>VMMDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="VMMDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>VMMDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="VMMDataSet1.xss">
+      <DependentUpon>VMMDataSet1.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\vmmBAL\vmmBAL.csproj">
+      <Project>{aef0eff2-a3b0-4692-88a2-94e857d74b37}</Project>
+      <Name>vmmBAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\vmmBEL\vmmBLL.csproj">
+      <Project>{733ce84e-7078-47ef-b503-796024cc1713}</Project>
+      <Name>vmmBLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\vmmDAL\vmmDAL.csproj">
+      <Project>{b4dec49a-0fac-43c0-849c-8d3dd3a65d1b}</Project>
+      <Name>vmmDAL</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1482543985_application_form_edit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Image1.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blue_key.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user_male.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
